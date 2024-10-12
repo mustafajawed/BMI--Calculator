@@ -1,47 +1,94 @@
+body, h1, h3, p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica', sans-serif;
+  background-color: #eef2f3;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .container {
-    width: 575px;
-    height: 825px;
-  
-    background-color: #797978;
-    padding-left: 30px;
-  }
-  #height,
-  #weight {
-    width: 150px;
-    height: 25px;
-    margin-top: 30px;
-  }
-  
-  #weight-guide {
-    margin-left: 75px;
-    margin-top: 25px;
-  }
-  
-  #results {
-    font-size: 35px;
-    margin-left: 90px;
-    margin-top: 20px;
-    color: rgb(241, 241, 241);
-  }
-  
-  button {
-    width: 150px;
-    height: 35px;
-    margin-left: 90px;
-    margin-top: 25px;
-    background-color: #fff;
-    padding: 1px 30px;
-    border-radius: 8px;
-    color: #212121;
-    text-decoration: none;
-    border: 2px solid #212121;
-  
-    font-size: 25px;
-  }
-  
-  h1 {
-    padding-left: 15px;
-    padding-top: 25px;
-    
-  }
-  
+  background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  width: 320px;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #2d2d2d;
+}
+
+input[type="text"] {
+  padding: 12px;
+  border: 2px solid #ff6f61;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #ff3d00;
+  outline: none;
+}
+
+button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #ff3d00;
+  transform: scale(1.05);
+}
+
+#results {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#weight-guide {
+  margin-top: 20px;
+  border-top: 2px dashed #ff6f61;
+  padding-top: 10px;
+}
+
+#weight-guide h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#weight-guide p {
+  margin: 5px 0;
+  color: #555;
+}
